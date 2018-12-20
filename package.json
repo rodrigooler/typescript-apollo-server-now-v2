@@ -1,9 +1,12 @@
 {
+  "name": "typescript-apollo-server-now-v2",
+  "version": "0.1.0",
   "dependencies": {
     "apollo-server-micro": "^2.3.1",
     "graphql": "^14.0.2"
   },
   "devDependencies": {
+    "@types/graphql": "^14.0.3",
     "typescript": "^3.2.2"
   },
   "scripts": {
