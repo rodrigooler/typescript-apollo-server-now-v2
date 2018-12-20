@@ -1,3 +1,4 @@
+import micro from "micro"
 import { ApolloServer, gql } from "apollo-server-micro";
 
 const typeDefs = gql`
@@ -16,4 +17,6 @@ const resolvers = {
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
-export default apolloServer.createHandler();
+const server = micro(apolloServer.createHandler())
+
+export default server;
